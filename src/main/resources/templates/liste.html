@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>liste des utilisateurs</title>
+    <link rel="stylesheet"
+          th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+<ol>
+    <li th:each="user:${listuser}" th:src ="{$user.image_url}" th:text="${user.pseudo}"
+        th:text="${user.latitude}" th:text="${user.longitude}">
+    </li>
+</ol>
+</body>
+</html>

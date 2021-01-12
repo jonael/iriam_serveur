@@ -1,0 +1,13 @@
+body{
+    background-image: linear-gradient(0, #FDC631, white);
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    font-family: "fantasy";
+    font-size: 40px;
+}
+h2{
+    color: #FF0000;
+}
+

@@ -1,0 +1,17 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Spring Boot Thymeleaf Example</title>
+    <link rel="stylesheet"
+          th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+<h1>Spring Boot Web Thymeleaf Example</h1>
+
+<H2> Une erreur est survenue : </H2><br/>
+<span class="error_message" th:utext="${errorMessage}"></span>
+
+</body>
+</html>
+

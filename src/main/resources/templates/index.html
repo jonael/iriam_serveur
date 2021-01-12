@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenue</title>
+    <link rel="stylesheet"
+          th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+
+    <h1> Bienvenue </h1>
+
+    <div class="choix">
+        <div th:action="@{/login}">
+            <a th:href="@{/login}">Se connecter</a>
+        </div>
+        <div th:action="@{/register}">
+            <a th:href="@{/register}">Créer un compte</a>
+        </div>
+    </div>
+
+</body>
+</html>

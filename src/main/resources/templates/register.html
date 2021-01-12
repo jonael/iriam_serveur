@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet"
+          th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+<h1>Créez un compte</h1>
+
+<form method="post" th:action="@{/liste}" th:object="${user}">
+    <p>Choisir un pseudo : <input th:field="*{pseudo}" type="text"/></p>
+    <p>Choisir mot de passe : <input th:field="*{password}" type="password"/></p>
+    <div class="under_input_txt">
+        <p class="buttonCreate"><input type="submit" value="Créer un compte"/></p>
+        <p class="loginLink"  th:action="@{/login}"><a th:href="@{/login}"> Se connecter </a> </p>
+    </div>
+</form>
+</body>
+</html>
